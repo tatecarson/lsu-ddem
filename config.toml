@@ -1,68 +1,46 @@
-baseURL = "/"
-
+baseurl = "/"
 languageCode = "en-us"
-DefaultContentLanguage = "en"
-title = "LSU PDM"
-theme = "docdock"
-# themesdir = "../.."
-pygmentsCodeFences = true
-pygmentsStyle = "monokailight"
+metadataformat = "yaml"
+title = "Alabaster"
+theme = "hugo-alabaster-theme"
 
-defaultContentLanguage = "en"
-defaultContentLanguageInSubdir= false
-enableMissingTranslationPlaceholders = false
-
-
-# [Languages]
-# [Languages.en]
-# title = "Documentation for Hugo docDock"
-# weight = 1
-# languageName = "English"
-# 
-# [Languages.fr]
-# title = "Documentation du thème docDock"
-# weight = 2
-# languageName = "Français"
-
-
-
+disqusShortname = ""
+googleAnalytics = ""
 
 [params]
-editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"
-showVisitedLinks = true # default is false
-themeStyle = "flex" # "original" or "flex" # default "flex"
-themeVariant = "" # choose theme variant "green", "gold" , "gray", "blue" (default)
-ordersectionsby = "weight" # ordersectionsby = "title"
-disableHomeIcon = false # default is false
-disableSearch = false # default is false
-disableNavChevron = false # set true to hide next/prev chevron, default is false
-highlightClientSide = false # set true to use highlight.pack.js instead of the default hugo chroma highlighter
-menushortcutsnewtab = false # set true to open shortcuts links to a new tab/window
-enableGitInfo = true
+	name = "Alabaster"
+	description = "A documentation theme for Hugo."
 
-[outputs]
-home = [ "HTML", "RSS", "JSON"]
+	github_user   = "digitalcraftsman"
+	github_repo   = "hugo-alabaster-theme"
+	github_banner = true
+
+	custom_css = []
+	custom_js  = []
+
+	highlightjs = "css/highlight.css"
+	favicon = "favicon.ico"
+
+[params.sidebar]
+	logo = "favicon.ico"
 
 
-[[menu.shortcuts]]
-pre = "<h3>More</h3>"
-name = "<i class='fa fa-github'></i> <label>Github repo</label>"
-identifier = "ds"
-url = "https://github.com/vjeantet/hugo-theme-docdock"
-weight = 10
+	github_button  = true
+	travis_button  = false
+	codecov_button = false
+	gratipay = ""
 
-[[menu.shortcuts]]
-name = "<i class='fa fa-cloud-download'></i> <label>Download</label>"
-url = "https://github.com/vjeantet/hugo-theme-docdock/archive/master.zip"
-weight = 11
+	show_relations = true
 
-[[menu.shortcuts]]
-name = "<i class='fa fa-bookmark'></i> <label>Hugo Documentation</label>"
-identifier = "hugodoc"
-url = "https://gohugo.io/"
-weight = 20
+[params.footer]
+	copyright = "[Digitalcraftsman](https://github.com/digitalcraftsman)"
+	show_powered_by = true
 
-[[menu.shortcuts]]
-name = "<i class='fa fa-bullhorn'></i> <label>Credits</label>"
-url = "/credits"
-weight = 30
+[[menu.main]]
+  name   = "Home"
+  url    = "/"
+  weight = 0
+[[menu.main]]
+  name   = "Drawing"
+  url    = "/drawing"
+  weight = 0
