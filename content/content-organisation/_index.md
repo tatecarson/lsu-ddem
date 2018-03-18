@@ -1,5 +1,6 @@
 +++
 title = "Content Organisation"
+layout = "page"
 description = ""
 weight = 20
 +++
