@@ -36,9 +36,9 @@ You maybe noticed that the menu on the left contains a small table of contents o
 Admonition is a handy feature that adds block-styled side content to your documentation, either notes or warnings. It can be enabled by using the corresponding [shortcodes](http://gohugo.io/extras/shortcodes/) inside your content:
 
 ```md
-{{</* admonition title="Note" type="note" */>}}
+{{</_ admonition title="Note" type="note" _/>}}
 Something good to know.
-{{</* /admonition */>}}
+{{</_ /admonition _/>}}
 ```
 
 will be rendered as
@@ -47,12 +47,12 @@ will be rendered as
 Lorem ipsum dolor.
 {{< /admonition >}}
 
-The `type` parameter can optionally be used to either display a `note` or `warning`. The last type is the default one. 
+The `type` parameter can optionally be used to either display a `note` or `warning`. The last type is the default one.
 
 ```md
-{{</* admonition title="Caution" */>}}
+{{</_ admonition title="Caution" _/>}}
 Don't try this at home!
-{{</* /admonition */>}}
+{{</_ /admonition _/>}}
 ```
 
 becomes
